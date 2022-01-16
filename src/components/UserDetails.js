@@ -1,4 +1,4 @@
-import { LocationMarkerIcon, LinkIcon, UserIcon, NewspaperIcon } from "@heroicons/react/solid";
+import { LocationMarkerIcon, LinkIcon, NewspaperIcon } from "@heroicons/react/solid";
 import { ReactComponent as TwitterLogo } from '../twitter.svg';
 
 const UserDetails = ({user, errorMsg}) => {
