@@ -17,7 +17,7 @@ const SearchField = ({setUser, setErrorMsg}) => {
         })
 
         gh.get(username).then(res => {
-            console.log(res.data)
+            console.log(res)
             setUser(res.data);
             setErrorMsg(null);
         })
