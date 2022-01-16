@@ -17,7 +17,6 @@ const SearchField = ({setUser, setErrorMsg}) => {
         })
 
         gh.get(username).then(res => {
-            console.log(res)
             setUser(res.data);
             setErrorMsg(null);
         })
@@ -26,7 +25,6 @@ const SearchField = ({setUser, setErrorMsg}) => {
                 if(err.response.status === 404) {
                     setErrorMsg('Error: User could not be found.');
                 } else {
-                    console.log(err.response);
                     setErrorMsg('Error: Unknown error.')
                 }
             }
